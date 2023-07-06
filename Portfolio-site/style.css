@@ -7,15 +7,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', 'sans-serif';
+
 }
 
 /* Global variables */
 :root{
     --sideBGColor: #000000;
-    --themeColor: #FB2576;
+    --themeColor: #a86d86;
     --iconBGColor: #ffffff;
     --textColor: #3b3a3a;
     --bgColor: #F7F7F7;
+    --main-bg-color: #824343;
 }
 
 /* HEADER START */
@@ -62,7 +64,7 @@ header .profile .social-icons a{
 }
 
 header .profile .social-icons a:hover{
-    background-color: rgb(248, 186, 195);
+    background-color: #2f3c99;
 }
 
 /* navbar */
@@ -100,7 +102,7 @@ header.footer{
     text-align: center;
     background-color: var(--sideBGColor);
     width: 300px;
-    color: whitesmoke;
+    color: blue;
     font-size: 14px;
     letter-spacing: 0.6px;
     padding: 15px;
@@ -518,7 +520,15 @@ main{
     font-style: italic;
     margin: 10px 0;
 }
-
+.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 3rem;
+    background-color: var(--main-bg-color);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
 /* Mobile View */
 
 @media only screen and(max-width: 820px){
@@ -810,5 +820,15 @@ main{
     }
 
  }
+
+ .footer {
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: 2rem;
+    text-align: center;
+    color: #872211;
+    background: #ffffff;
+}
+
 
 /* Contact section end */

@@ -75,8 +75,17 @@
 #footer {
     background-color: #808080;
     text-align: center;
+    color: #ffff;
 }
-.i{
-   text-align: center;
-   color: #ffff
+
+/* button styling */
+
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 3rem;
+    background-color: #808080;
+    color: #808080;
+    cursor: pointer;
+    font-size: 1.7rem;
 }

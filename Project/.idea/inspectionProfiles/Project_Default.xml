@@ -1,0 +1,38 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyChainedComparisonsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoreConstantInTheMiddle" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N803" />
+          <option value="N806" />
+          <option value="N812" />
+          <option value="N801" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="Testing.test_geek.urls.test_geek" />
+          <option value="Hello.myApp.urls.myApp" />
+          <option value="Hello.myApp.admin.myApp" />
+          <option value="Hello.myApp.admin.Contact" />
+          <option value="Hello.myApp.views.*" />
+          <option value="Hello.myApp.Contact" />
+          <option value="myapi.myapi.urls.myapp" />
+          <option value="paymentgate.payment.views.paytm" />
+          <option value="list.split" />
+          <option value="music.Pause" />
+          <option value="music.*" />
+          <option value="rotatescreen" />
+          <option value="list.__getitem__" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

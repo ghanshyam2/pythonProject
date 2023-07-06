@@ -8,7 +8,7 @@ MenuBtn.addEventListener('click', function(e) {
 
 
 let typed = new Typed(".auto-input",{
-    strings: ['Back-End Developer.', 'Programmer.','Learner.'],
+    strings: ['Back-End Developer.', 'Programmer.','Learner.', 'Enthusiastic.'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 2000,
