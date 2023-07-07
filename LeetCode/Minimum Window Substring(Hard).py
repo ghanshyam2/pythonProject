@@ -3,10 +3,10 @@ def Min_window_subString(s, t):
     min_len = len(s) + 1
     char_frq = {}
 
-    for chr in t:
-        if chr not in char_frq:
-            char_frq[chr] = 0
-        char_frq[chr] += 1
+    for ch in t:
+        if ch not in char_frq:
+            char_frq[ch] = 0
+        char_frq[ch] += 1
 
     for wind_end in range(len(s)):
         right_chr = s[wind_end]
@@ -25,11 +25,13 @@ def Min_window_subString(s, t):
                     matched -= 1
                 char_frq[left_chr] += 1
     if min_len > len(s):
-        return ""
+        return "No String"
     return s[sub_str:sub_str + min_len]
 
 
+print(Min_window_subString("abcad", "abc"))
+print(Min_window_subString("aabdec", "abc"))
+print(Min_window_subString("adcad", "abc"))
 print(Min_window_subString("ADOBECODEBANC", "ABC"))
 print(Min_window_subString("a", "a"))
 print(Min_window_subString("a", "aa"))
-
