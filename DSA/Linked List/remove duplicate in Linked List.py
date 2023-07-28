@@ -23,7 +23,7 @@ class LinkedList:
 
         track = {}
         current = self.head
-        while current is not None:
+        while current:
 
             if current.data not in track:
                 print(current.data, end=' ')
