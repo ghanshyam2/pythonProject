@@ -27,10 +27,11 @@ def minimumTree(root):
     return min(root.data, min(leftMin, rightMin))
 
 
-root = Node(50)
-root.left = Node(20)
-root.right = Node(40)
-root.left.left = Node(15)
-root.left.right = Node(25)
+root = Node(12)
+root.left = Node(7)
+root.right = Node(1)
+root.left.left = Node(9)
+root.right.left = Node(10)
+root.right.right = Node(5)
 print(maximumTree(root))
 print(minimumTree(root))
