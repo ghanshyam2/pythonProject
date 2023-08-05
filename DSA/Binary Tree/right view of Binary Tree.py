@@ -8,11 +8,11 @@ class Node:
         self.right = None
 
 
-def right_view_of_BTree(root):
+def right_view_of_BTree(treeRoot):
     res = []
-    if not root:
+    if not treeRoot:
         return []
-    queue = deque([root])
+    queue = deque([treeRoot])
     while queue:
         for i in range(len(queue)):
             node = queue.popleft()
@@ -30,5 +30,13 @@ root.left = Node(20)
 root.right = Node(40)
 root.left.left = Node(15)
 root.right.right= Node(35)
-root.left.right = Node(25)
+root.right.right.left = Node(25)
+print(right_view_of_BTree(root))
+root = Node(12)
+root.left = Node(7)
+root.right = Node(1)
+root.left.left = Node(9)
+root.right.left = Node(10)
+root.right.right = Node(5)
+root.right.right.left = Node(3)
 print(right_view_of_BTree(root))
