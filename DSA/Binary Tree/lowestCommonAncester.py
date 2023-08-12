@@ -5,15 +5,15 @@ class Node:
         self.right = None
 
 
-def LCA(root, n1, n2):
-    if not root:
-        return root
+def LCA(treeRoot, n1, n2):
+    if not treeRoot:
+        return treeRoot
 
-    lca = LCA(root.left, n1, n2)
-    rca = LCA(root.right, n1, n2)
+    lca = LCA(treeRoot.left, n1, n2)
+    rca = LCA(treeRoot.right, n1, n2)
 
-    if (lca and rca) and root in [n1, n2]:
-        return root
+    if (lca and rca) and treeRoot in [n1, n2]:
+        return treeRoot
     else:
         return lca or rca
 

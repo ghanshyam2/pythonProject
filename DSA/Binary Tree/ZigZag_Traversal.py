@@ -29,7 +29,7 @@ def zigZagTraversal(treeRoot):
             if curr_node.right:
                 queue.append(curr_node.right)
         leftToRight = not leftToRight
-        #result.appendleft(list(currLevel))
+        # result.appendleft(list(currLevel))
         answer.append(list(currLevel))
     return answer
 
